@@ -1,0 +1,160 @@
+body {
+    background-color: #f3f5fc;
+    display: flex;
+    font-family: Inter;
+    margin: 40px;
+}
+
+.container-esquerda {
+    width: 100%;
+    max-width: 1280px;
+}
+
+header {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+main {
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    color: #0A3871;
+    font-size: 24px;
+    font-family: Inter;
+    height: 289px;
+    resize: none;
+    width: 100%;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+#aviso {
+    display: inline-block;
+    font-size: 14px;
+}
+
+#aviso:before {
+    content: url(../img/exclamacao.svg);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.botoes button {
+    flex-grow: 1;
+}
+
+button {
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-family: Inter;
+    padding: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.botoes button:first-child {
+    background-color: #0A3871;
+    border: none;
+    color: white;
+}
+
+aside {
+    align-items: center;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    padding-inline: 40px;
+}
+
+.aside-mensagem {
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+}
+
+button, aside .aside-mensagem p {
+    font-size: 14px;
+}
+
+.aside-mensagem img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 150px;
+}
+
+h2 {
+    color: #343A40;
+    font-size: 20px;
+}
+
+.c-cinza-claro {
+    color: #495057;
+}
+
+.aside-conversao {
+    display: none;
+}
+
+@media (max-width: 688px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        position: absolute;
+        left: 0;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    aside {
+        margin: 64px 0 0;
+        margin-top: 64px;
+    }
+
+    .aside-mensagem {
+        padding: 32px;
+    }
+
+    .aside-mensagem img {
+        display: none;
+    } 
+}
+
+@media (max-width: 515px) {
+    .aside-mensagem {
+        padding: 32px 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .botoes {
+        flex-direction: column;
+    }
+}

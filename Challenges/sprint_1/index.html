@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="icon" href="">
+        <title>Decoditext</title>
+        <meta name="description" content="Decodifique ou encodique seus textos, formule ou descubra mensagens secretas!">
+    </head>
+    <body>
+        <div class="container-esquerda">
+            <header>
+                <img src="src\img\logo.svg" alt="logo da alura, uma letra 'a' azul com fonte sem serifa">
+            </header>
+            <main>
+                <textarea value=""></textarea>
+                <p id="aviso" class="c-cinza-claro">Apenas letras minúsculas e sem acento</p>
+                <div class="botoes">
+                    <button>Criptografar</button>
+                    <button>Descriptografar</button>
+                </div>
+            </main>
+        </div>
+        <aside>
+            <article class="aside-mensagem">
+                <img src="src\img\pessoa-com-lupa.svg" alt="desenho de garota sentada segurando uma lupa com expressão de surpresa na direção de um diamante">
+                <h2>Nenhuma mensagem<br>encontrada</h2>
+                <p class="c-cinza-claro">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </article>
+            <article class="aside-conversao">
+                <p id="texto-convertido" class="c-cinza-claro"></p>
+                <button>Copiar</button>
+            </article>
+        </aside>
+    </body>
+</html>
