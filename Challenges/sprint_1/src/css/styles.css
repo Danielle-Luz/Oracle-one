@@ -153,12 +153,13 @@ button, aside .aside-mensagem p {
 }
 
 #texto-convertido {
+    border-block: 10px solid white;
+    box-sizing: border-box;
     height: 100%;
     margin-bottom: 0;
     max-height: 440px;
     overflow-y: auto;
     overflow-x: hidden;
-    border: 10px solid white;
     word-break: break-word;
 }
 
