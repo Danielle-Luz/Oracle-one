@@ -10,29 +10,39 @@
         <meta name="description" content="Decodifique ou encodique seus textos, formule ou descubra mensagens secretas!">
     </head>
     <body>
-        <div class="container-esquerda">
-            <header>
-                <img src="src\img\logo.svg" alt="logo da alura, uma letra 'a' azul com fonte sem serifa">
-            </header>
-            <main>
-                <textarea value=""></textarea>
-                <p id="aviso" class="c-cinza-claro">Apenas letras minúsculas e sem acento</p>
-                <div class="botoes">
-                    <button>Criptografar</button>
-                    <button>Descriptografar</button>
-                </div>
-            </main>
+        <div class="container-dialog d-none">
+            <div class="dialog">
+                <img src="src/img/check.svg" alt="símbolo verde de check">
+                <p>Texto copiado para a área de transferência</p>
+                <button>OK</button>
+            </div>
         </div>
-        <aside>
-            <article class="aside-mensagem">
-                <img src="src\img\pessoa-com-lupa.svg" alt="desenho de garota sentada segurando uma lupa com expressão de surpresa na direção de um diamante">
-                <h2>Nenhuma mensagem<br>encontrada</h2>
-                <p class="c-cinza-claro">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </article>
-            <article class="aside-conversao">
-                <p id="texto-convertido" class="c-cinza-claro"></p>
-                <button>Copiar</button>
-            </article>
-        </aside>
+        <div class="container-externo">
+            <div class="container-esquerda">
+                <header>
+                    <img src="src\img\logo.svg" alt="logo da alura, uma letra 'a' azul com fonte sem serifa">
+                </header>
+                <main>
+                    <textarea value=""></textarea>
+                    <p id="aviso" class="c-cinza-claro">Apenas letras minúsculas e sem acento</p>
+                    <div class="botoes">
+                        <button>Criptografar</button>
+                        <button>Descriptografar</button>
+                    </div>
+                </main>
+            </div>
+            <aside>
+                <article class="aside-mensagem">
+                    <img src="src\img\pessoa-com-lupa.svg" alt="desenho de garota sentada segurando uma lupa com expressão de surpresa na direção de um diamante">
+                    <h2>Nenhuma mensagem<br>encontrada</h2>
+                    <p class="c-cinza-claro">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </article>
+                <article class="aside-conversao d-none">
+                    <p id="texto-convertido" class="c-cinza-claro"></p>
+                    <button id="b-copiar">Copiar</button>
+                </article>
+            </aside>
+        </div>
+        <script src="src/js/scripts.js"></script>
     </body>
 </html>
