@@ -155,6 +155,7 @@ button, aside .aside-mensagem p {
 #texto-convertido {
     border-block: 10px solid white;
     box-sizing: border-box;
+    font-size: 24px;
     height: 100%;
     margin-bottom: 0;
     max-height: 440px;
@@ -177,10 +178,6 @@ h2 {
 
 .c-cinza-claro {
     color: #495057;
-}
-
-#texto-convertido {
-    font-size: 24px;
 }
 
 .d-none {
